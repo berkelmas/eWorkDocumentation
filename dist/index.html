@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- Favicon icon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/sezin-logo-dark.png"
+    />
+    <title>Sezin E-Work Döküman</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/prism/prism.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- You can change the theme colors from here -->
+    <link href="css/colors/blue.css" id="theme" rel="stylesheet" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body class="fix-header card-no-border fix-sidebar">
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper">
+      <!-- ============================================================== -->
+      <!-- Topbar header - style you can find in pages.scss -->
+      <!-- ============================================================== -->
+      <header class="topbar">
+        <nav class="navbar top-navbar navbar-expand-md navbar-light">
+          <!-- ============================================================== -->
+          <!-- Logo -->
+          <!-- ============================================================== -->
+          <div class="navbar-header">
+            <a class="navbar-brand nav-toggler">
+              <!-- Logo icon -->
+              <b>
+                <!-- Dark Logo icon -->
+                <img
+                  src="assets/sezin-logo-dark.png"
+                  alt="homepage"
+                  class="dark-logo"
+                />
+                <!-- Light Logo icon -->
+                <img
+                  src="assets/sezin-logo-light.png"
+                  alt="homepage"
+                  class="light-logo"
+                />
+              </b>
+              <!-- Logo text -->
+              <span>
+                <!-- dark Logo text -->
+                <img
+                  src="assets/sezin-logo-text.png"
+                  alt="homepage"
+                  class="dark-logo"
+                />
+                <!-- Light Logo text -->
+                <img
+                  src="assets/sezin-logo-light-text.png"
+                  class="light-logo"
+                  alt="homepage"
+                />
+              </span>
+            </a>
+          </div>
+          <!-- ============================================================== -->
+          <!-- End Logo -->
+          <!-- ============================================================== -->
+          <div class="navbar-collapse">
+            <!-- ============================================================== -->
+            <!-- toggle and nav items -->
+            <!-- ============================================================== -->
+            <ul class="navbar-nav mr-auto mt-md-0 ">
+              <!-- This is  
+                        <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+                        -->
+              <!-- ============================================================== -->
+              <!-- End Messages -->
+              <!-- ============================================================== -->
+            </ul>
+            <!-- ============================================================== -->
+            <!-- User profile and search -->
+            <!-- ============================================================== -->
+          </div>
+        </nav>
+      </header>
+      <!-- ============================================================== -->
+      <!-- End Topbar header -->
+      <!-- ============================================================== -->
+      <!-- ============================================================== -->
+      <!-- Left Sidebar - style you can find in sidebar.scss  -->
+      <!-- ============================================================== -->
+      <aside class="left-sidebar">
+        <!-- Sidebar scroll-->
+        <div class="scroll-sidebar">
+          <!-- Sidebar navigation-->
+          <nav class="sidebar-nav">
+            <ul id="sidebarnav">
+              <li class="nav-small-cap">Genel</li>
+              <li>
+                <a href="#main-page" aria-expanded="false"
+                  ><i class="mdi mdi-arrow-right-drop-circle"></i
+                  ><span class="hide-menu">Ana Sayfa</span></a
+                >
+              </li>
+              <li>
+                <a href="#calendar" aria-expanded="false"
+                  ><i class="mdi mdi-arrow-right-drop-circle"></i
+                  ><span class="hide-menu">Takvim</span></a
+                >
+              </li>
+              <li>
+                <a href="#announcements" aria-expanded="false"
+                  ><i class="mdi mdi-arrow-right-drop-circle"></i
+                  ><span class="hide-menu">Duyurular</span></a
+                >
+              </li>
+
+              <li class="nav-small-cap">Grafik</li>
+              <li>
+                <a
+                  class="has-arrow waves-effect waves-dark"
+                  href="#analysis"
+                  aria-expanded="false"
+                  ><i class="mdi mdi-arrow-right-drop-circle"></i
+                  ><span class="hide-menu">İstatistik</span></a
+                >
+                <ul aria-expanded="false" class="collapse">
+                  <li><a href="#device-analysis">Çekim Sayısı</a></li>
+                  <li><a href="#material-analysis">Malzeme Talep</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-small-cap">Yönetim</li>
+              <li>
+                <a
+                  class="has-arrow waves-effect waves-dark"
+                  href="#icon"
+                  aria-expanded="false"
+                  ><i class="mdi mdi-arrow-right-drop-circle"></i
+                  ><span class="hide-menu">Teknik Oda</span></a
+                >
+                <ul aria-expanded="false" class="collapse">
+                  <li><a href="#button">Mr Formu</a></li>
+                  <li><a href="#cards">Ct Formu</a></li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  class="has-arrow waves-effect waves-dark"
+                  href="#icon"
+                  aria-expanded="false"
+                  ><i class="mdi mdi-arrow-right-drop-circle"></i
+                  ><span class="hide-menu">Günlük Sayı</span></a
+                >
+                <ul aria-expanded="false" class="collapse">
+                  <li><a href="#button">Günlük CR Bildirimi</a></li>
+                  <li><a href="#cards">Günlük KMD Bildirimi</a></li>
+                  <li><a href="#cards">Günlük MAMO Bildirimi</a></li>
+                  <li><a href="#cards">Günlük Rapor Bildirimi</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <a
+                  class="has-arrow waves-effect waves-dark"
+                  href="#icon"
+                  aria-expanded="false"
+                  ><i class="mdi mdi-arrow-right-drop-circle"></i
+                  ><span class="hide-menu">İş Emri</span></a
+                >
+                <ul aria-expanded="false" class="collapse">
+                  <li><a href="#button">Üzerimdeki İş Emirleri</a></li>
+                  <li><a href="#cards">Verdiğim İş Emirleri</a></li>
+                  <li><a href="#cards">Tüm İş Emirleri</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <a
+                  class="has-arrow waves-effect waves-dark"
+                  href="#icon"
+                  aria-expanded="false"
+                  ><i class="mdi mdi-arrow-right-drop-circle"></i
+                  ><span class="hide-menu">Malzeme Talep</span></a
+                >
+                <ul aria-expanded="false" class="collapse">
+                  <li><a href="#button">Yeni Talep</a></li>
+                  <li><a href="#cards">Malzeme Taleplerim</a></li>
+                  <li><a href="#cards">Tüm Malzeme Talepleri</a></li>
+                  <li><a href="#cards">Onay Bekleyen Talepler</a></li>
+                  <li><a href="#cards">Onaylanan Talepler</a></li>
+                  <li><a href="#cards">Malzeme Tipleri</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <a
+                  class="has-arrow waves-effect waves-dark"
+                  href="#icon"
+                  aria-expanded="false"
+                  ><i class="mdi mdi-arrow-right-drop-circle"></i
+                  ><span class="hide-menu">Saha Takibi</span></a
+                >
+                <ul aria-expanded="false" class="collapse">
+                  <li><a href="#button">Gönderdiğim Raporlar</a></li>
+                  <li><a href="#cards">Gelen Raporlar</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <a
+                  class="has-arrow waves-effect waves-dark"
+                  href="#icon"
+                  aria-expanded="false"
+                  ><i class="mdi mdi-arrow-right-drop-circle"></i
+                  ><span class="hide-menu">İnsan Kaynakları</span></a
+                >
+                <ul aria-expanded="false" class="collapse">
+                  <li><a href="#button">Taleplerim</a></li>
+                  <li><a href="#cards">Onay</a></li>
+                  <li><a href="#cards">İptal Onayı</a></li>
+                  <li><a href="#cards">İzin Yönetimi</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <a
+                  class="has-arrow waves-effect waves-dark"
+                  href="#icon"
+                  aria-expanded="false"
+                  ><i class="mdi mdi-arrow-right-drop-circle"></i
+                  ><span class="hide-menu">Onam Formu</span></a
+                >
+                <ul aria-expanded="false" class="collapse">
+                  <li><a href="#button">Tüm Formlar</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <a
+                  class="has-arrow waves-effect waves-dark"
+                  href="#icon"
+                  aria-expanded="false"
+                  ><i class="mdi mdi-arrow-right-drop-circle"></i
+                  ><span class="hide-menu">Döküman</span></a
+                >
+                <ul aria-expanded="false" class="collapse">
+                  <li><a href="#button">Yeni Döküman</a></li>
+                  <li><a href="#button">Dökümanlarım</a></li>
+                  <li><a href="#button">Tüm Dökümanlar</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-small-cap">Bilgi</li>
+              <li>
+                <a
+                  class="has-arrow waves-effect waves-dark"
+                  href="#icon"
+                  aria-expanded="false"
+                  ><i class="mdi mdi-arrow-right-drop-circle"></i
+                  ><span class="hide-menu">Yardım ve Destek</span></a
+                >
+                <ul aria-expanded="false" class="collapse">
+                  <li><a href="#button">Sık Sorulan Sorular</a></li>
+                  <li><a href="#button">Destek Başvurusu</a></li>
+                  <li><a href="#button">Destek Başvurusu Listesi</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-small-cap">Ayarlar</li>
+              <li>
+                <a
+                  class="has-arrow waves-effect waves-dark"
+                  href="#icon"
+                  aria-expanded="false"
+                  ><i class="mdi mdi-arrow-right-drop-circle"></i
+                  ><span class="hide-menu">Sistem</span></a
+                >
+                <ul aria-expanded="false" class="collapse">
+                  <li><a href="#button">Grup Ayarları</a></li>
+                  <li><a href="#button">Rol Ayarları</a></li>
+                  <li><a href="#button">Kullanıcı Ayarları</a></li>
+                  <li><a href="#button">Bildirim Ayarları</a></li>
+                  <li><a href="#button">Hastane Yönetimi</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <!-- End Sidebar navigation -->
+        </div>
+        <!-- End Sidebar scroll-->
+      </aside>
+      <!-- ============================================================== -->
+      <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+      <!-- ============================================================== -->
+      <!-- ============================================================== -->
+      <!-- Page wrapper  -->
+      <!-- ============================================================== -->
+      <div class="page-wrapper">
+        <!-- ============================================================== -->
+        <!-- Container fluid  -->
+        <!-- ============================================================== -->
+        <div class="container-fluid">
+          <!-- ============================================================== -->
+          <!-- Start Page Content -->
+          <!-- ============================================================== -->
+          <div class="fix-width">
+            <div class="row p-t-30">
+              <div class="col-12">
+                <!-- card -->
+<div class="card" id="main-page">
+  <div class="card-body">
+      <h3>Introduction</h3>
+
+
+      <hr>
+      <p>MaterialPro Angular Dashboard Template is made with Material Angular. This documentation will help you to understand template’s structure and how to edit. Please follow it very carefully to find out how template works and how you can edit things. You should have knowledge of Angular JS, CSS and HTML to be able to modify this template.</p>
+      <p>If you dont find something while you are following the documentation, please create a support ticket from <a href="https://wrappixel.com/support">wrappixel.com</a> and our tech. team will help you out.</p>
+      <p>Support does include:
+          <ul>
+              <li>Answering your questions or problems regarding the template.</li>
+              <li>Giving solution to the Bugs reported.</li>
+              <li>Updating our existing template to latest version of softwares / frameworks.</li>
+          </ul>
+      </p>
+      <p>Support does not include:
+          <ul>
+              <li>Customisation Work</li>
+              <li>Any Installation Work</li>
+              <li>Support for any Third Party Plugins / Software</li>
+              <li>Support or Guide for How to integrate with any technologies (like, PHP, .net, Java etc)</li>
+          </ul>
+      </p>
+      <p>Before creating ticket, please make sure your question is regarding support only and not for customisation and also follow full documentation to make sure the question / bug you are posting is not mentioned in documentation.</p>
+      <p>We at WrapPixel offers affordable customisation services for our templates. For any customisation work, please email us at <a href="mailto:info@wrappixel.com">info@wrappixel.com</a>.</p>
+      <p>Please give 5 star rating to our template, as rating will help other people to trust our template.</p>
+      <hr> 
+      <h5>Dependencies</h5>
+      <hr>
+      <ul>
+          <li><a href="https://angular.io/" target="_blank">Angular 7+</a></li>
+          <li><a href="https://material.angular.io/" target="_blank">Material Angular</a></li>
+          <li><a href="http://sass-lang.com/" target="_blank">Sass</a></li>                
+      </ul>
+      <hr>
+      <h5>Browser Support</h5>
+      <hr>
+      <p>Material Admin is built to work in the latest desktop and mobile and tablet browsers.</p>
+      <ul>
+          <li>Chrome (latest)</li>
+          <li>FireFox (latest)</li>
+          <li>Safari (latest)</li>
+          <li>Opera (latest)</li>
+          <li>Edge (latest)</li>
+      </ul>
+  </div>
+</div>
+                <!-- card -->
+<div class="card" id="calendar">
+  <div class="card-body">
+      <h3>Calendar</h3>
+
+
+      <hr>
+      <p>MaterialPro Angular Dashboard Template is made with Material Angular. This documentation will help you to understand template’s structure and how to edit. Please follow it very carefully to find out how template works and how you can edit things. You should have knowledge of Angular JS, CSS and HTML to be able to modify this template.</p>
+      <p>If you dont find something while you are following the documentation, please create a support ticket from <a href="https://wrappixel.com/support">wrappixel.com</a> and our tech. team will help you out.</p>
+      <p>Support does include:
+          <ul>
+              <li>Answering your questions or problems regarding the template.</li>
+              <li>Giving solution to the Bugs reported.</li>
+              <li>Updating our existing template to latest version of softwares / frameworks.</li>
+          </ul>
+      </p>
+      <p>Support does not include:
+          <ul>
+              <li>Customisation Work</li>
+              <li>Any Installation Work</li>
+              <li>Support for any Third Party Plugins / Software</li>
+              <li>Support or Guide for How to integrate with any technologies (like, PHP, .net, Java etc)</li>
+          </ul>
+      </p>
+      <p>Before creating ticket, please make sure your question is regarding support only and not for customisation and also follow full documentation to make sure the question / bug you are posting is not mentioned in documentation.</p>
+      <p>We at WrapPixel offers affordable customisation services for our templates. For any customisation work, please email us at <a href="mailto:info@wrappixel.com">info@wrappixel.com</a>.</p>
+      <p>Please give 5 star rating to our template, as rating will help other people to trust our template.</p>
+      <hr> 
+      <h5>Dependencies</h5>
+      <hr>
+      <ul>
+          <li><a href="https://angular.io/" target="_blank">Angular 7+</a></li>
+          <li><a href="https://material.angular.io/" target="_blank">Material Angular</a></li>
+          <li><a href="http://sass-lang.com/" target="_blank">Sass</a></li>                
+      </ul>
+      <hr>
+      <h5>Browser Support</h5>
+      <hr>
+      <p>Material Admin is built to work in the latest desktop and mobile and tablet browsers.</p>
+      <ul>
+          <li>Chrome (latest)</li>
+          <li>FireFox (latest)</li>
+          <li>Safari (latest)</li>
+          <li>Opera (latest)</li>
+          <li>Edge (latest)</li>
+      </ul>
+  </div>
+</div>
+                <!-- card -->
+<div class="card" id="announcements">
+  <div class="card-body">
+      <h3>Announcements</h3>
+
+
+      <hr>
+      <p>MaterialPro Angular Dashboard Template is made with Material Angular. This documentation will help you to understand template’s structure and how to edit. Please follow it very carefully to find out how template works and how you can edit things. You should have knowledge of Angular JS, CSS and HTML to be able to modify this template.</p>
+      <p>If you dont find something while you are following the documentation, please create a support ticket from <a href="https://wrappixel.com/support">wrappixel.com</a> and our tech. team will help you out.</p>
+      <p>Support does include:
+          <ul>
+              <li>Answering your questions or problems regarding the template.</li>
+              <li>Giving solution to the Bugs reported.</li>
+              <li>Updating our existing template to latest version of softwares / frameworks.</li>
+          </ul>
+      </p>
+      <p>Support does not include:
+          <ul>
+              <li>Customisation Work</li>
+              <li>Any Installation Work</li>
+              <li>Support for any Third Party Plugins / Software</li>
+              <li>Support or Guide for How to integrate with any technologies (like, PHP, .net, Java etc)</li>
+          </ul>
+      </p>
+      <p>Before creating ticket, please make sure your question is regarding support only and not for customisation and also follow full documentation to make sure the question / bug you are posting is not mentioned in documentation.</p>
+      <p>We at WrapPixel offers affordable customisation services for our templates. For any customisation work, please email us at <a href="mailto:info@wrappixel.com">info@wrappixel.com</a>.</p>
+      <p>Please give 5 star rating to our template, as rating will help other people to trust our template.</p>
+      <hr> 
+      <h5>Dependencies</h5>
+      <hr>
+      <ul>
+          <li><a href="https://angular.io/" target="_blank">Angular 7+</a></li>
+          <li><a href="https://material.angular.io/" target="_blank">Material Angular</a></li>
+          <li><a href="http://sass-lang.com/" target="_blank">Sass</a></li>                
+      </ul>
+      <hr>
+      <h5>Browser Support</h5>
+      <hr>
+      <p>Material Admin is built to work in the latest desktop and mobile and tablet browsers.</p>
+      <ul>
+          <li>Chrome (latest)</li>
+          <li>FireFox (latest)</li>
+          <li>Safari (latest)</li>
+          <li>Opera (latest)</li>
+          <li>Edge (latest)</li>
+      </ul>
+  </div>
+</div>
+                <!-- card -->
+<div class="card" id="analysis">
+  <div class="card-body">
+      <h3>ANALYSIS</h3>
+
+
+      <hr>
+      <p>MaterialPro Angular Dashboard Template is made with Material Angular. This documentation will help you to understand template’s structure and how to edit. Please follow it very carefully to find out how template works and how you can edit things. You should have knowledge of Angular JS, CSS and HTML to be able to modify this template.</p>
+      <p>If you dont find something while you are following the documentation, please create a support ticket from <a href="https://wrappixel.com/support">wrappixel.com</a> and our tech. team will help you out.</p>
+      <p>Support does include:
+          <ul>
+              <li>Answering your questions or problems regarding the template.</li>
+              <li>Giving solution to the Bugs reported.</li>
+              <li>Updating our existing template to latest version of softwares / frameworks.</li>
+          </ul>
+      </p>
+      <p>Support does not include:
+          <ul>
+              <li>Customisation Work</li>
+              <li>Any Installation Work</li>
+              <li>Support for any Third Party Plugins / Software</li>
+              <li>Support or Guide for How to integrate with any technologies (like, PHP, .net, Java etc)</li>
+          </ul>
+      </p>
+      <p>Before creating ticket, please make sure your question is regarding support only and not for customisation and also follow full documentation to make sure the question / bug you are posting is not mentioned in documentation.</p>
+      <p>We at WrapPixel offers affordable customisation services for our templates. For any customisation work, please email us at <a href="mailto:info@wrappixel.com">info@wrappixel.com</a>.</p>
+      <p>Please give 5 star rating to our template, as rating will help other people to trust our template.</p>
+      <hr> 
+      <h5>Dependencies</h5>
+      <hr>
+      <ul>
+          <li><a href="https://angular.io/" target="_blank">Angular 7+</a></li>
+          <li><a href="https://material.angular.io/" target="_blank">Material Angular</a></li>
+          <li><a href="http://sass-lang.com/" target="_blank">Sass</a></li>                
+      </ul>
+      <hr>
+      <h5>Browser Support</h5>
+      <hr>
+      <p>Material Admin is built to work in the latest desktop and mobile and tablet browsers.</p>
+      <ul>
+          <li>Chrome (latest)</li>
+          <li>FireFox (latest)</li>
+          <li>Safari (latest)</li>
+          <li>Opera (latest)</li>
+          <li>Edge (latest)</li>
+      </ul>
+  </div>
+</div>
+                <!-- card -->
+<div class="card" id="device-analysis">
+  <div class="card-body">
+      <h3>DEVICE ANALYSIS</h3>
+
+
+      <hr>
+      <p>MaterialPro Angular Dashboard Template is made with Material Angular. This documentation will help you to understand template’s structure and how to edit. Please follow it very carefully to find out how template works and how you can edit things. You should have knowledge of Angular JS, CSS and HTML to be able to modify this template.</p>
+      <p>If you dont find something while you are following the documentation, please create a support ticket from <a href="https://wrappixel.com/support">wrappixel.com</a> and our tech. team will help you out.</p>
+      <p>Support does include:
+          <ul>
+              <li>Answering your questions or problems regarding the template.</li>
+              <li>Giving solution to the Bugs reported.</li>
+              <li>Updating our existing template to latest version of softwares / frameworks.</li>
+          </ul>
+      </p>
+      <p>Support does not include:
+          <ul>
+              <li>Customisation Work</li>
+              <li>Any Installation Work</li>
+              <li>Support for any Third Party Plugins / Software</li>
+              <li>Support or Guide for How to integrate with any technologies (like, PHP, .net, Java etc)</li>
+          </ul>
+      </p>
+      <p>Before creating ticket, please make sure your question is regarding support only and not for customisation and also follow full documentation to make sure the question / bug you are posting is not mentioned in documentation.</p>
+      <p>We at WrapPixel offers affordable customisation services for our templates. For any customisation work, please email us at <a href="mailto:info@wrappixel.com">info@wrappixel.com</a>.</p>
+      <p>Please give 5 star rating to our template, as rating will help other people to trust our template.</p>
+      <hr> 
+      <h5>Dependencies</h5>
+      <hr>
+      <ul>
+          <li><a href="https://angular.io/" target="_blank">Angular 7+</a></li>
+          <li><a href="https://material.angular.io/" target="_blank">Material Angular</a></li>
+          <li><a href="http://sass-lang.com/" target="_blank">Sass</a></li>                
+      </ul>
+      <hr>
+      <h5>Browser Support</h5>
+      <hr>
+      <p>Material Admin is built to work in the latest desktop and mobile and tablet browsers.</p>
+      <ul>
+          <li>Chrome (latest)</li>
+          <li>FireFox (latest)</li>
+          <li>Safari (latest)</li>
+          <li>Opera (latest)</li>
+          <li>Edge (latest)</li>
+      </ul>
+  </div>
+</div>
+                <!-- card -->
+<div class="card" id="material-analysis">
+  <div class="card-body">
+      <h3>MATERIAL ANALYSIS</h3>
+
+
+      <hr>
+      <p>MaterialPro Angular Dashboard Template is made with Material Angular. This documentation will help you to understand template’s structure and how to edit. Please follow it very carefully to find out how template works and how you can edit things. You should have knowledge of Angular JS, CSS and HTML to be able to modify this template.</p>
+      <p>If you dont find something while you are following the documentation, please create a support ticket from <a href="https://wrappixel.com/support">wrappixel.com</a> and our tech. team will help you out.</p>
+      <p>Support does include:
+          <ul>
+              <li>Answering your questions or problems regarding the template.</li>
+              <li>Giving solution to the Bugs reported.</li>
+              <li>Updating our existing template to latest version of softwares / frameworks.</li>
+          </ul>
+      </p>
+      <p>Support does not include:
+          <ul>
+              <li>Customisation Work</li>
+              <li>Any Installation Work</li>
+              <li>Support for any Third Party Plugins / Software</li>
+              <li>Support or Guide for How to integrate with any technologies (like, PHP, .net, Java etc)</li>
+          </ul>
+      </p>
+      <p>Before creating ticket, please make sure your question is regarding support only and not for customisation and also follow full documentation to make sure the question / bug you are posting is not mentioned in documentation.</p>
+      <p>We at WrapPixel offers affordable customisation services for our templates. For any customisation work, please email us at <a href="mailto:info@wrappixel.com">info@wrappixel.com</a>.</p>
+      <p>Please give 5 star rating to our template, as rating will help other people to trust our template.</p>
+      <hr> 
+      <h5>Dependencies</h5>
+      <hr>
+      <ul>
+          <li><a href="https://angular.io/" target="_blank">Angular 7+</a></li>
+          <li><a href="https://material.angular.io/" target="_blank">Material Angular</a></li>
+          <li><a href="http://sass-lang.com/" target="_blank">Sass</a></li>                
+      </ul>
+      <hr>
+      <h5>Browser Support</h5>
+      <hr>
+      <p>Material Admin is built to work in the latest desktop and mobile and tablet browsers.</p>
+      <ul>
+          <li>Chrome (latest)</li>
+          <li>FireFox (latest)</li>
+          <li>Safari (latest)</li>
+          <li>Opera (latest)</li>
+          <li>Edge (latest)</li>
+      </ul>
+  </div>
+</div>
+
+                <div id="icon"></div>
+              </div>
+            </div>
+          </div>
+          <!-- ============================================================== -->
+          <!-- End PAge Content -->
+          <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Container fluid  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- footer -->
+        <!-- ============================================================== -->
+        <footer class="footer">© 2019 Material Admin by wrappixel.com</footer>
+        <!-- ============================================================== -->
+        <!-- End footer -->
+        <!-- ============================================================== -->
+      </div>
+      <!-- ============================================================== -->
+      <!-- End Page wrapper  -->
+      <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="js/jquery.slimscroll.js"></script>
+    <!--Wave Effects -->
+    <script src="js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="js/custom.min.js"></script>
+    <script src="assets/prism/prism.js"></script>
+    <script>
+      $("#sidebarnav a").click(function() {
+        $("html, body").animate(
+          {
+            scrollTop: $($(this).attr("href")).offset().top - 85
+          },
+          500
+        );
+        return false;
+      });
+    </script>
+  </body>
+</html>
