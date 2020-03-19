@@ -49,13 +49,13 @@
               <b>
                 <!-- Dark Logo icon -->
                 <img
-                  src="assets/sezin-logo-dark.png"
+                  src="assets/images/sezin-logo.png"
                   alt="homepage"
                   class="dark-logo"
                 />
                 <!-- Light Logo icon -->
                 <img
-                  src="assets/sezin-logo-light.png"
+                  src="assets/images/sezin-logo.png"
                   alt="homepage"
                   class="light-logo"
                 />
@@ -64,13 +64,13 @@
               <span>
                 <!-- dark Logo text -->
                 <img
-                  src="assets/sezin-logo-text.png"
+                  src="assets/images/logo-text.png"
                   alt="homepage"
                   class="dark-logo"
                 />
                 <!-- Light Logo text -->
                 <img
-                  src="assets/sezin-logo-light-text.png"
+                  src="assets/logo-text.png"
                   class="light-logo"
                   alt="homepage"
                 />
@@ -115,6 +115,12 @@
                 <a href="#main-page" aria-expanded="false"
                   ><i class="mdi mdi-arrow-right-drop-circle"></i
                   ><span class="hide-menu">Ana Sayfa</span></a
+                >
+              </li>
+              <li>
+                <a href="#profile" aria-expanded="false"
+                  ><i class="mdi mdi-arrow-right-drop-circle"></i
+                  ><span class="hide-menu">Profil</span></a
                 >
               </li>
               <li>
@@ -340,6 +346,7 @@
               <div class="col-12">
                 <!-- MAIN -->
                 @@include("./sections/main-page.html")
+                @@include("./sections/profile.html")
                 @@include("./sections/calendar.html")
                 @@include("./sections/announcements.html")
 
