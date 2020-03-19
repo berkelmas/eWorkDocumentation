@@ -257,28 +257,28 @@
               <li>
                 <a
                   class="has-arrow waves-effect waves-dark"
-                  href="#icon"
+                  href="#consent-form"
                   aria-expanded="false"
                   ><i class="mdi mdi-arrow-right-drop-circle"></i
                   ><span class="hide-menu">Onam Formu</span></a
                 >
                 <ul aria-expanded="false" class="collapse">
-                  <li><a href="#button">Tüm Formlar</a></li>
+                  <li><a href="#all-consent-forms">Tüm Formlar</a></li>
                 </ul>
               </li>
 
               <li>
                 <a
                   class="has-arrow waves-effect waves-dark"
-                  href="#icon"
+                  href="#document"
                   aria-expanded="false"
                   ><i class="mdi mdi-arrow-right-drop-circle"></i
                   ><span class="hide-menu">Döküman</span></a
                 >
                 <ul aria-expanded="false" class="collapse">
-                  <li><a href="#button">Yeni Döküman</a></li>
-                  <li><a href="#button">Dökümanlarım</a></li>
-                  <li><a href="#button">Tüm Dökümanlar</a></li>
+                  <li><a href="#new-document">Yeni Döküman</a></li>
+                  <li><a href="#my-documents">Dökümanlarım</a></li>
+                  <li><a href="#all-documents">Tüm Dökümanlar</a></li>
                 </ul>
               </li>
 
@@ -286,15 +286,15 @@
               <li>
                 <a
                   class="has-arrow waves-effect waves-dark"
-                  href="#icon"
+                  href="#gethelp"
                   aria-expanded="false"
                   ><i class="mdi mdi-arrow-right-drop-circle"></i
                   ><span class="hide-menu">Yardım ve Destek</span></a
                 >
                 <ul aria-expanded="false" class="collapse">
-                  <li><a href="#button">Sık Sorulan Sorular</a></li>
-                  <li><a href="#button">Destek Başvurusu</a></li>
-                  <li><a href="#button">Destek Başvurusu Listesi</a></li>
+                  <li><a href="#faq">Sık Sorulan Sorular</a></li>
+                  <li><a href="#get-new-help">Destek Başvurusu</a></li>
+                  <li><a href="#get-all-helps">Destek Başvurusu Listesi</a></li>
                 </ul>
               </li>
 
@@ -302,17 +302,17 @@
               <li>
                 <a
                   class="has-arrow waves-effect waves-dark"
-                  href="#icon"
+                  href="#system"
                   aria-expanded="false"
                   ><i class="mdi mdi-arrow-right-drop-circle"></i
                   ><span class="hide-menu">Sistem</span></a
                 >
                 <ul aria-expanded="false" class="collapse">
-                  <li><a href="#button">Grup Ayarları</a></li>
-                  <li><a href="#button">Rol Ayarları</a></li>
-                  <li><a href="#button">Kullanıcı Ayarları</a></li>
-                  <li><a href="#button">Bildirim Ayarları</a></li>
-                  <li><a href="#button">Hastane Yönetimi</a></li>
+                  <li><a href="#system-group">Grup Ayarları</a></li>
+                  <li><a href="#system-role">Rol Ayarları</a></li>
+                  <li><a href="#system-user">Kullanıcı Ayarları</a></li>
+                  <li><a href="#system-notification">Bildirim Ayarları</a></li>
+                  <li><a href="#system-hospital">Hastane Yönetimi</a></li>
                 </ul>
               </li>
             </ul>
@@ -387,6 +387,31 @@
                 @@include("./sections/management/human-resources/approve-leave-requests.html")
                 @@include("./sections/management/human-resources/approve-cancel-leave-requests.html")
                 @@include("./sections/management/human-resources/leave-request-management.html")
+
+                <!-- CONSENT FORM -->
+                @@include("./sections/management/consent-form/consent-form.html")
+                @@include("./sections/management/consent-form/all-consent-forms.html")
+
+                <!-- DOCUMENT -->
+                @@include("./sections/management/document/document.html")
+                @@include("./sections/management/document/new-document.html")
+                @@include("./sections/management/document/my-documents.html")
+                @@include("./sections/management/document/all-documents.html")
+
+                <!-- INFORMATION -->
+                <!-- GET HELPS -->
+                @@include("./sections/gethelp/gethelp.html")
+                @@include("./sections/gethelp/faq.html")
+                @@include("./sections/gethelp/get-new-help.html")
+                @@include("./sections/gethelp/get-all-helps.html")
+
+                <!-- SYSTEM -->
+                @@include("./sections/system/system.html")
+                @@include("./sections/system/system-group.html")
+                @@include("./sections/system/system-role.html")
+                @@include("./sections/system/system-user.html")
+                @@include("./sections/system/system-notification.html")
+                @@include("./sections/system/system-hospital.html")
 
                 <div id="icon"></div>
               </div>
